@@ -1,6 +1,7 @@
 {
   "name": "booking_app",
   "version": "1.0.0",
+  "homepage": "https://francescabambozzi.github.io/Booking_App",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
@@ -10,10 +11,12 @@
     "react-scripts": "2.1.8"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
